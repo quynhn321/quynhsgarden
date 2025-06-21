@@ -2,153 +2,155 @@ baseURL: https://github.com/quynhn321/quynhsgarden
 languageCode: en-us
 title: Quynh Nguyen
 theme: PaperMod
+baseURL: 'https://magdelinehuang.com/'
+title: Magdeline Huang
+paginate: 10
+theme: PaperMod
 
-enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+
+googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
-  # minifyOutput: true
+  minifyOutput: true
 
-pagination:
-  disableAliases: false
-  pagerSize: 5
-
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+taxonomies:
+  tag: 'tags'
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
-  # author: ["Me", "You"] # multiple authors
+  title: Quynh Nguyen
+  description: 'My digital garden'
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Quynh Nguyen
+  images: ['<link or path of image for opengraph, twitter-cards>']
+  DateFormat: 'June 20, 2025'
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
 
-  defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: true
   ShowReadingTime: true
-  # disableSpecial1stPost: true
-  displayFullLangName: true
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-  ShowToc: true
-  # comments: false
-  images: ["images/papermod-cover.png"]
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
 
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: '/favicon.ico'
+    favicon16x16: '/favicon-16x16.png'
+    favicon32x32: '/favicon-32x32.png'
+    apple_touch_icon: '/apple-touch-icon.png'
+    safari_pinned_tab: '/favicon-16x16.png'
+
+  label:
+    text: 'Quynh Nguyen'
+    icon:
+    iconHeight: 35
+
+  # profile-mode
   profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
+    enabled: false # needs to be explicitly set
+    title: Quynh Nguyen
+    subtitle: 'This is subtitle'
+    imageUrl: '<img location>'
+    imageWidth: 120
+    imageHeight: 120
     imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
     buttons:
-      - name: Archives
-        url: archives
+      - name: Posts
+        url: posts
       - name: Tags
         url: tags
 
+  # home-info mode
   homeInfoParams:
-    Title: "Quynh's Garden"
-    Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
-
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+    Title: "Hello world, I'm Quynh! 👩🏻‍💻"
+    Content: Welcome to my digital garden where I document my learnings as a cybersecurity professional.
 
   socialIcons:
     - name: github
-      title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
-    - name: Discord
-      title: Join discord community
-      url: "https://discord.gg/ahpmTvhVmp"
-    - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
-    - name: KoFi
-      title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+      url: 'https://github.com/quynhn321'
+    - name: youtube
+      url: ''
+    - name: instagram
+      url: ''
+    - name: tiktok
+      url: ''
+    - name: twitter
+      url: ''
+    - name: other
+      url: ''
 
-  editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  analytics:
+    google:
+      SiteVerificationTag: ''
+    bing:
+      SiteVerificationTag: ''
+    yandex:
+      SiteVerificationTag: ''
 
-  # label:
-  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
-  # text: "Home"
-  # icon: icon.png
-  # iconHeight: 35
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
 
-  # analytics:
-  #     google:
-  #         SiteVerificationTag: "XYZabc"
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
-  assets:
-    disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ['title', 'permalink', 'summary', 'content']
 
-  # cover:
-  #     hidden: true # hide everywhere but not in structured data
-  #     hiddenInList: true # hide on list pages and home
-  #     hiddenInSingle: true # hide on single page
+menu:
+  main:
+    # - identifier: about
+    #   name: about
+    #   url: /about/
+    #   weight: 10
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
+    - identifier: changelog
+      name: changelog
+      url: /changelog/
+      weight: 50
 
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
-
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
   highlight:
     noClasses: false
     # anchorLineNos: true
@@ -157,26 +159,12 @@ markup:
     # lineNos: true
     # style: monokai
 
-# privacy:
-#   vimeo:
-#     disabled: false
-#     simple: true
+# For search: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 
-#   twitter:
-#     disabled: false
-#     enableDNT: true
-#     simple: true
-
-#   instagram:
-#     disabled: false
-#     simple: true
-
-#   youtube:
-#     disabled: false
-#     privacyEnhanced: true
-
-services:
-  instagram:
-    disableInlineCSS: true
-  x:
-    disableInlineCSS: true
+# Publishing the site
+publishDir: 'docs'
