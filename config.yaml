@@ -2,10 +2,6 @@ baseURL: https://github.com/quynhn321/quynhsgarden
 languageCode: en-us
 title: Quynh Nguyen
 theme: PaperMod
-baseURL: 'https://magdelinehuang.com/'
-title: Magdeline Huang
-paginate: 10
-theme: PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
